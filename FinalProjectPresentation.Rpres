@@ -1,0 +1,90 @@
+Final Project Presentation
+========================================================
+author: John McConnell
+date:   06/23/2017
+font-family:  'Helvetica'
+autosize: true
+transition: rotate
+
+<style>
+/* titles h3 */
+.reveal h3 { 
+  font-size: 60px;
+  color: black;
+}
+
+/* headings h2 */
+.reveal .slides section .slideContent h2 {
+   font-size: 40px;
+   font-weight: bold;
+   color: blue;
+}
+
+/* unordered list styles */
+.reveal ul {
+    font-size: 40px;
+    color: red;
+    list-style-type: round;
+}
+
+</style>
+
+Conversion tool for US to Metric
+========================================================
+
+## This tool can be used to easily convert US measures of:
+
+- Miles
+- Inches
+- Pounds
+- Gallons
+
+## Into metric measures:
+
+- Kilometers
+- Centimeters
+- Kilograms
+- Liters
+
+Input Methods
+========================================================
+
+## The method of inputs are as follows:
+
+- Miles - slider, range: 1 - 1000
+- Inches - numeric, range:  1 - 100
+- Pounds - slider, range: 1 - 500
+- Gallons - slider, range:  1 - 50 
+
+## The forumlas used for the conversion are:
+
+- km <- miles/0.62137
+- cm <- inches*2.54
+- kg <- pounds/0.45359237
+- li <- gallons*3.785411784
+
+Conversion Examples
+========================================================
+
+```{r}
+miles = 50; km <- miles/0.62137; show(km)
+inches = 24; cm <- inches*2.54; show(cm)
+pounds = 190; kg <- pounds/0.45359237; show(kg)
+gallons = 9; li <- gallons*3.785411784; show(li)
+```
+
+Conclusion
+===============================================================
+
+## Advantages of this tool:
+
+- Simple input mechanisms
+- Efficient conversion from US measures to their metric equvalents
+- Web availability of tool increases accessibility and usability
+
+## For more information on metric conversions please visit:
+
+- http://www.metric-conversions.org/
+- https://www.convert-me.com/en/metric_conversions.html
+
+
